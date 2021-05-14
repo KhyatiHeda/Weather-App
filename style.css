@@ -1,0 +1,165 @@
+body
+{
+    background-image:url("https://source.unsplash.com/1600x900/?nature,sky,sunset,sunrise");
+    font-style: "lufga";
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+      
+}
+
+.combo
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.weather-details
+{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+.search-place
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.right-container
+{
+    background: hsla(0, 0%, 0%, 0.815);
+  color: whitesmoke;
+  padding:20px;
+  margin:0px;
+  width:100%;
+  max-width:540px;
+  /* border-radius:25px; */
+  height:100vh;
+  border:none;
+  
+}
+.left-container
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+     width:100%;
+     max-width: 400px;
+  border-radius:25px;
+  padding:20px;
+  
+  
+}
+.search-place
+{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+#place
+{
+  max-width:180px;
+  border-radius:25px;
+  height:25px;
+  margin:10px;
+  border: none;
+}
+.labelplace
+{
+  font-size:25px;
+}
+.weather-details h2
+{
+  text-align:center;
+  font-size:30px;
+  font-decoration:italic;
+  font-weight:30px;
+  font-family:'Georgia';
+}
+.submit
+{
+  position:absolute;
+  right:20px;
+  top:35px;
+  font-family:'Times New Roman';
+  font-size:20px;
+  font-weight: bold;
+  border: none;
+  border-radius:25px;
+  padding:10px;
+  background-color:#b67162;
+}
+
+.submit:hover
+{
+  background-color:#3a1816;
+  color: #fff;
+}
+hr
+{
+  width:90%;
+}
+
+#temp, #Hum, #Ws, #sr, #st
+{
+  font-family:'Times New Roman';
+  font-size:25px;
+  position:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+#tempkol
+{
+  color: #fff;
+  position:absolute;
+  font-size:70px;
+  font-family:'Times New Roman';
+  bottom:26px;
+  left:20px;
+  font-weight:100px;
+}
+#desc
+{
+  color: #fff;
+  position:absolute;
+  font-size:30px;
+  font-weight: 300;
+  bottom:60px;
+  left:20px;
+  font-family:'Georgia';
+}
+#icon
+{
+  position:absolute;
+  bottom:180px;
+}
+
+#loc-left
+{
+  color: #fff;
+  font-size:70px;
+  font-family:'Georgia';
+}
+
+#date
+{
+  color: #fff;
+  position:absolute;
+  font-size:25px;
+  bottom:40px;
+  right:680px;
+}
+
+#time
+{
+  position:absolute;
+  font-size:25px;
+  bottom:15px;
+  right:700px;
+  color: #fff;
+}

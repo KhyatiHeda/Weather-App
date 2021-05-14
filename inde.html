@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            WEATHER APP
+        </title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="link.js" defer></script>
+        </head>
+        <body>
+           <div class="combo">
+            <div class="left-container">
+
+                <div class="image">
+                    <p id="tempkol"></p>
+                    <img src=""  id="icon" />
+                 <div id="desc"></div>    
+                </div>
+
+                 <div class="td">
+                    <h2 id="loc-left"></h2>
+                    <p id="date"></p>
+                    <p id="time"></p>
+                 </div>
+                
+                  
+            </div>
+            
+
+            <div class="right-container">
+                <div class="search-place"><label for ="place" class="labelplace"><b>Enter Place: </b> </label>
+                    <input type="text" id="place" name="city" ></div>
+            
+            <button class="submit" onclick=onClick()> Search </button>
+      <br><hr>     
+                <div class="weather-details">
+                    <h2> WEATHER DETAILS </h2> 
+                
+                <div id="Hum"></div> 
+                <div id="Ws"></div> 
+                <div id="sr"> 5:26 AM </div>
+                <div id="st">5:34 PM </div> 
+                </div>
+                
+            </div>
+        </div>
+            
+        </body>
+        <script style="text-align: left; text-decoration: solid; font-family: 'Times New Roman', Times, serif; font-size: larger; font-weight: bold">
+            var today = new Date();
+            var date = today.getMonth()+1+" - "+(today.getDate())+" - "+today.getFullYear();
+            var time=today.getHours()+":"+today.getMinutes()+":"+today.getSeconds();
+            document.getElementById("date").innerHTML=date;
+            document.getElementById("time").innerHTML=time;
+          </script>
+</html>
